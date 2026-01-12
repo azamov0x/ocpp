@@ -110,7 +110,7 @@ func TestHandlers_Heartbeat(t *testing.T) {
 
 	req := &cpreq.Heartbeat{}
 
-	resp, err := handler.Heartbeart(req)
+	resp, err := handler.Heartbeat(req)
 	if err != nil {
 		t.Fatalf("Heartbeat() error = %v", err)
 	}

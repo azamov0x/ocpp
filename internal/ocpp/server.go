@@ -172,7 +172,7 @@ func (s *Server) Run() error {
 		case *cpreq.Authorize:
 			return handler.Authorize(req)
 		case *cpreq.Heartbeat:
-			return handler.Heartbeart(req)
+			return handler.Heartbeat(req)
 		case *cpreq.MeterValues:
 			return handler.MeterValues(req)
 		case *cpreq.StartTransaction:

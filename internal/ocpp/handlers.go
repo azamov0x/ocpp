@@ -94,7 +94,7 @@ func (h *Handlers) StopTransaction(req *cpreq.StopTransaction) (cpresp.ChargePoi
 	}, nil
 }
 
-func (h *Handlers) Heartbeart(req *cpreq.Heartbeat) (cpresp.ChargePointResponse, error) {
+func (h *Handlers) Heartbeat(req *cpreq.Heartbeat) (cpresp.ChargePointResponse, error) {
 	event := domain.Event{
 		Domain: h.metadata.Host,
 		Event:  domain.HealthEvent,
